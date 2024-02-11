@@ -1,0 +1,131 @@
+# def Que_operations():
+#     """Implements a Que data structure with push, pop, First, and display operations."""
+
+#     Que = []  # Initialize an empty Que
+
+#     while True:
+#         try:
+#             print('''
+#             1 Push Elements
+#             2 Pop Elements
+#             3 First Elements
+#             4 Display Que
+#             5 Exit
+#             ''')
+
+#             choice = int(input("Enter your choice: "))
+
+#             if choice == 1:
+#                 value = input("Enter the value to push: ")
+#                 Que.append(value)
+#                 print(f"Push successful. Que: {Que}")
+
+#             elif choice == 2:
+#                 if Que:
+#                     popped_value = Que.pop()
+#                     print(f"Pop successful. Popped value: {popped_value}")
+#                     print(f"Updated Que: {Que}")
+#                 else:
+#                     print("Que is empty. Pop operation failed.")
+
+#             elif choice == 3:
+#                 if Que:
+#                     First_value = Que[-1]
+#                     print(f"First successful. Last element: {First_value}")
+#                 else:
+#                     print("Que is empty. First operation failed.")
+
+#             elif choice == 4:
+#                 if Que:
+#                     print(f"Que: {Que}")
+#                 else:
+#                     print("Que is empty.")
+
+#             elif choice == 5:
+#                 print("Exiting the program.")
+#                 break
+
+#             else:
+#                 print("Invalid choice. Please enter a number between 1 and 5.")
+
+#         except ValueError:
+#             print("Invalid input. Please enter a valid integer.")
+            
+
+# # Run the Que operations
+# Que_operations
+
+def Que_operations():
+    """Implements a Que data structure with push, pop, First, and display operations."""
+
+    Que = []  # Initialize an empty Que
+
+    while True:
+        try:
+            print('''
+            1 Push Elements
+            2 Pop First Elements
+            3 Front Elements
+            4 Last Element
+            5 Display Que
+            6 Exit
+            ''')
+
+            choice = int(input("Enter your choice: "))
+
+            if choice == 1:
+                value = input("Enter the value to push: ")
+                Que.append(value)
+                print(f"Push successful. Que: {Que}")
+
+            elif choice == 2:
+                if Que:
+                    del_value = Que.del()
+                    print(f"Pop successful. Popped value: {del_value}")
+                    print(f"Updated Que: {Que}")
+                else:
+                    print("Que is empty. Pop operation failed.")
+
+            elif choice == 3:
+                if Que:
+                    First_value = Que[0]
+                    print(f"First successful. Last element: {First_value}")
+                else:
+                    print("Que is empty. First operation failed.")
+
+            elif choice == 4:
+                if Que:
+                    First_value = Que[-1]
+                    print(f"First successful. Last element: {First_value}")
+                else:
+                    print("Que is empty. Last operation failed.")
+            elif choice == 5:
+                if Que:
+                    First_value = Que[-1]
+                    print(f"Display Que successful. Last element: {First_value}")
+
+            else:
+                print("Invalid choice. Please enter a number between 1 and 5.")
+
+        except ValueError:
+            print("Invalid input. Please enter a valid integer.")
+            
+
+# Run the Que operations
+Que_operations()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
